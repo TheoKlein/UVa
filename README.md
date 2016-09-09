@@ -20,6 +20,4 @@
 │   └── Volume9
 │       └── 00948.cpp
 └── README.md
-
-10 directories, 9 files
 ```
