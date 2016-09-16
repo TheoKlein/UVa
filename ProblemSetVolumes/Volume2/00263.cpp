@@ -32,26 +32,23 @@ int main(){
                 b = ascending(n),
                 r = a - b;
 
-            n = r;
-
             cout << a << " - " << b << " = " << r << endl;
             times++;
+            n = r;
 
             if(times > 1){
                 for(int j = 0 ; j < temp.size() ; ++j){
                     if(temp[j] == r){
-                        cout << "Chain length " << times << endl;
+                        cout << "Chain length " << times << endl << endl;
                         same = true;
                         break;
                     }
                 }
 
-                if(!same){
+                if(!same)
                     temp.push_back(r);
-                }
             }else
                 temp.push_back(r);
         }
-        cout << endl;
     }
 }
