@@ -113,16 +113,6 @@ int main(){
                 }
             }
         }
-        
-        if(count++ == 613){
-            cout << "\nFIND!!!!" << endl;
-            cout << "R = " << R << " C = " << C << endl;
-            for(int i = 0 ; i < R ; i++){
-                for(int j = 0 ; j > C ; j++)
-                    cout << maze[i][j];
-                cout << endl;
-            }
-        }
         BFS();
     }
 }
