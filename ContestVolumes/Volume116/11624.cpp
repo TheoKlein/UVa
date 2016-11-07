@@ -32,11 +32,11 @@ void fill(int x, int y, char c, int s){
     }else if(c == 'J' && s < joeMaze[x][y]){
         joeMaze[x][y] = s;
         point temp(x, y);
-        joe.push(temp);  
+        joe.push(temp);
     }
 }
 
-void BSF(){     
+void BFS(){     
     // fireMaze
     steps = 1;
     while(!fire.empty()){
@@ -123,6 +123,6 @@ int main(){
                 cout << endl;
             }
         }
-        BSF();
+        BFS();
     }
 }
