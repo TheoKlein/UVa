@@ -1,7 +1,6 @@
 #include <iostream>
 #include <queue>
 #include <cstring>
-#include <fstream>
 
 #define SIZE 9
 #define BIGN 10000
@@ -72,9 +71,6 @@ void BFS(){
 }
 
 int main(){
-    #if defined(JUDGE)
-        freopen("p11.in", "r", stdin);
-    #endif
     while(getline(cin, input)){
         init();
         BFS();
